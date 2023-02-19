@@ -1,0 +1,414 @@
+:root{
+	--deepblue: #364c96;
+	--blanco: #fffaf6;
+	--grisclaro: #f1f1f1;
+	--gris: #d1d1d1;
+	--grismedio: #a1a1a1;
+	--grisoscuro: #818181;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	scroll-behavior: smooth;	
+}
+
+
+header{
+	height: 10vh;
+	width: 100vw;
+	background-color: #364c96ff;
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	color: var(--blanco);
+	z-index: 100;
+}
+
+.header__a{
+	color: var(--blanco);
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-weight: 100%;
+}
+
+.header__a:hover{
+	letter-spacing: 3px;
+	transition: 1s;
+}
+
+.a__img-flecha{
+	rotate: 180deg;
+	margin-bottom: -7px;
+	filter: invert(100%);
+}
+
+.h1__bymaxi{
+	font-size: .5em;
+	padding-left: 50px;
+}
+
+
+	.body__article{
+		display: grid;
+		grid-template-columns: 100vw;
+		grid-template-rows: 15vh 70vh 70vh 85vh 85vh 40vh;
+		padding-top: 10vh;
+		background-color: var(--blanco);
+	}
+
+	aside{
+		grid-row: 1;
+		background-color: var(--grisclaro);
+	}
+
+	.aside__ul{
+		padding: 10px;
+	/*	padding-bottom: 0;*/
+		display: flex;
+	/*	flex-direction: column;*/
+		flex-direction: column;
+		list-style: none;
+	}
+
+	.ul-aside__li{
+		padding-bottom: 10px;
+	}
+
+	.ul-aside__li:hover{
+		padding-left: 15px;
+		transition: 1s;
+	}
+
+	.li-aside__a{
+		text-decoration: none;
+		color: var(--deepblue);
+	}
+
+	.li-aside__a:hover{
+		color: #697fc9;
+		transition: .01s;
+	}
+
+	/*-------Section1--------*/
+	.section1{
+		grid-row: 2;
+		background-image: url(img/perf5.jpeg); /*esta es la img del celular*/
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	/*	z-index: -1;*/
+		height: 70%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.section1:hover{
+		height: 100%;
+		transition: 1s;
+	}
+
+	.section1__div{
+		display: grid;
+		grid-template-rows: repeat(3, 23.33vh);
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		justify-items: center;
+	}
+
+	.div-normal__div-h3-flecha{
+		grid-row: 2;
+	}
+
+	.div-normal__h3{
+		color: var(--blanco);
+	}
+
+	.section1__p{
+		grid-row: 3;
+		color: var(--blanco);
+		margin: 0px 20px 0px 20px;
+		text-align: justify;
+	}
+
+	.div__img-flecha{
+		grid-row: 2;
+		position: absolute;
+		margin-bottom: 0px;
+		margin-left: 40px;
+		margin-right: 40px;
+		rotate: 90deg;
+		filter: invert(100%);
+		animation-name: animacion-flecha;
+		animation-duration: 3s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+	}
+
+	@keyframes animacion-flecha{
+		0%{
+			margin-top: 5px;
+		}
+
+		20%{
+			margin-top: 12px;
+		}
+
+		40%{
+			margin-top: 5px;
+		}
+
+		60%{
+			margin-top: 12px;
+		}
+
+		80%{
+			margin-top: 5px;
+		}
+
+		100%{
+			margin-top: 12px;
+		}
+	}
+
+	.section2{
+		grid-row: 3;
+		background-image: url(img/background23.png); /*esta es la img del celular*/
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	/*	z-index: -1;*/
+		height: 70%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.section2:hover{
+		height: 100%;
+		transition: 2s;
+	}
+
+	.section2__div{
+		display: grid;
+		grid-template-rows: repeat(3, 23.33vh);
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		justify-items: center;
+	}
+
+	.div2-normal__div-h3-flecha{
+		grid-row: 2;
+	}
+
+	.div2-normal__h3{
+		color: var(--blanco);
+	}
+
+	.section2__p{
+		grid-row: 3;
+		color: var(--blanco);
+		margin: 0px 20px 0px 20px;
+		text-align: justify;
+	}
+
+	.div2__img-flecha{
+		grid-row: 2;
+		position: absolute;
+		margin-bottom: 0px;
+		margin-left: 67px;
+		margin-right: 67px;
+		rotate: 90deg;
+		filter: invert(100%);
+		animation-name: animacion-flecha;
+		animation-duration: 3s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+	}
+
+
+	.section3{
+		grid-row: 4;
+		background-image: url(img2/perf9.jpeg); /*esta es la img del celular*/
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	/*	z-index: -1;*/
+		height: 65%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.section3:hover{
+		height: 100%;
+		transition: 2s;
+	}
+
+	.section3__div{
+		display: grid;
+		grid-template-rows: repeat(3, 28.33vh);
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		justify-items: center;
+	}
+
+	.div3-normal__div-h3-flecha{
+		grid-row: 2;
+	}
+
+	.div3-normal__h3{
+		color: var(--blanco);
+	}
+
+	.section3__p{
+		grid-row: 3;
+		color: var(--blanco);
+		margin: 0px 20px 0px 20px;
+		text-align: justify;
+	}
+
+	.div3__img-flecha{
+		grid-row: 2;
+		position: absolute;
+		margin-bottom: 0px;
+		margin-left: 78px;
+		margin-right: 78px;
+		rotate: 90deg;
+		filter: invert(100%);
+		animation-name: animacion-flecha;
+		animation-duration: 3s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+	}
+
+	/*-------Section4---------*/
+
+	.section4{
+		grid-row: 5;
+		background-image: url(img/background21.png); /*esta es la img del celular*/
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	/*	z-index: -1;*/
+		height: 65%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.section4:hover{
+		height: 100%;
+		transition: 2s;
+	}
+
+	.section4__div{
+		display: grid;
+		grid-template-rows: repeat(3, 28.33vh);
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		justify-items: center;
+	}
+
+	.div4-normal__div-h3-flecha{
+		grid-row: 2;
+	}
+
+	.div4-normal__h3{
+		color: var(--blanco);
+	}
+
+	.section4__p{
+		grid-row: 3;
+		color: var(--blanco);
+		margin: 0px 20px 0px 20px;
+		text-align: justify;
+	}
+
+	.div4__img-flecha{
+		grid-row: 2;
+		position: absolute;
+		margin-bottom: 0px;
+		margin-left: 125px;
+		margin-right: 125px;
+		rotate: 90deg;
+		filter: invert(100%);
+		animation-name: animacion-flecha;
+		animation-duration: 3s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+	}
+
+	.footer{
+		background-color: var(--grisclaro);
+	}
+
+	.footer__ul{
+		display: flex;
+		flex-direction: column;
+		align-content: flex-start;
+		align-items: flex-start;
+		padding: 20px;
+		list-style: none;
+		justify-content: space-around;
+		z-index: -1;
+		background-color: var(--grisclaro);
+	}
+
+	.footer__ul__li{
+		padding-bottom: 4vh;
+		text-align: center;
+	}
+
+	.ul__li__h4 a{
+		color: var(--grisoscuro);
+		text-decoration: none;
+		font-size: 1.2em;
+	}
+
+	.ul__li__h4 a:hover{
+		color: var(--grismedio);
+		transition: .1s;
+	}
+
+	.aboutme{
+		text-decoration: underline;
+	}
+
+	.footer__ul__p{
+		color: var(--grismedio);
+		align-self: center;
+	}
+
+/*-----COMPU-----*/
+@media screen and (min-width: 1000px){
+	.body__article{
+		grid-template-columns: 5vw 90vw 5vw;
+	}
+
+	aside, .footer{
+		grid-column: 1 / span 3;
+	}
+
+	.section1, .section2, .section3, .section4{
+		grid-column: 2;
+	}
+
+	.aside__ul{
+		align-items: center;
+	}
+
+	.ul-aside__li:hover{
+		letter-spacing: 2.5px;
+		transition: 1.5s;
+	}
+}

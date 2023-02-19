@@ -1,0 +1,184 @@
+:root{
+	--deepblue: #364c96;
+	--blanco: #fffaf6;
+	--grisclaro: #f1f1f1;
+	--gris: #d1d1d1;
+	--grismedio: #a1a1a1;
+	--grisoscuro: #818181;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	scroll-behavior: smooth;	
+}
+
+body{
+}
+
+header{
+	height: 10vh;
+	width: 100vw;
+	background-color: #364c9666;
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	color: var(--blanco);
+	z-index: 100;
+}
+
+.header__a{
+	color: var(--blanco);
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-weight: 100%;
+}
+
+.header__a:hover{
+	letter-spacing: 3px;
+	transition: 1s;
+}
+
+.a__img-flecha{
+	rotate: 180deg;
+	margin-bottom: -7px;
+	filter: invert(100%);
+}
+
+.h1__bymaxi{
+	font-size: .5em;
+	padding-left: 50px;
+}
+
+
+/*------GALERIA 6 FOTOS (15%)------*/
+
+article{
+	display: grid;
+	grid-template-rows: repeat(3, 100vh) 40vh;
+	grid-template-columns: 100vw;
+	padding-top: 10vh;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.column{
+	flex: 15%;
+}
+
+h3{
+	text-align: center;
+	padding: 40px 0 40px 0;
+	background-color: #ffffff66;
+	font-size: 2em;
+}
+
+.img{
+	width: 100%;
+	height: auto;
+	padding-left: 2.5px;
+	padding-right: 2.5px;
+	padding-top: 2.5px;
+}
+
+.article__section{
+	overflow: scroll;
+	margin-bottom: 90px;
+}
+
+.section1{
+	grid-row: 1;
+	grid-column: 1;
+}
+
+.section2{
+	grid-row: 2;
+	grid-column: 1;
+}
+
+.section3{
+	grid-row: 3;
+	grid-column: 1;
+	margin-bottom: 0;
+}
+
+.section4{
+	grid-row: 4;
+	grid-column: 1;
+}
+
+@media (max-width: 1200px){
+	.column{
+		flex: 30%;
+	}
+}
+
+@media (max-width: 800px){
+	.column{
+		flex: 45%;
+	}
+}
+
+/*@media (max-width: 600px){
+	.column{
+		flex: 75%;
+	}
+}*/
+
+/*------FOOTER------*/
+
+.footer{
+	grid-row: 4;
+	grid-column: 1;
+	background-color: var(--grisclaro);
+}
+
+.footer__ul{
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
+	align-items: flex-start;
+	padding: 20px;
+	list-style: none;
+	justify-content: space-around;
+	z-index: -1;
+	background-color: var(--grisclaro);
+}
+
+.footer__ul__li{
+	padding-bottom: 4vh;
+	text-align: center;
+}
+
+.ul__li__h4 a{
+	color: var(--grisoscuro);
+	text-decoration: none;
+	font-size: 1.2em;
+}
+
+.ul__li__h4 a:hover{
+	color: var(--grismedio);
+	transition: .1s;
+}
+
+.art{
+	text-decoration: underline;
+}
+
+.footer__ul__p{
+	color: var(--grismedio);
+	align-self: center;
+}
+
+
+
+
+
+
